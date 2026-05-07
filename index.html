@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+  <div class="container header-section">
+
+    <div class="header-section-menu">
+      <div><a href="#">Home</a></div>
+      <div><a href="#">Browse</a></div>
+      <div><a href="#">Vehicle</a></div>
+      <div><a href="#">Services</a></div>
+    </div>
+
+    <div class="logo">
+      <div>Rent<span>Sathi</span></div>
+    </div>
+
+    <div class="header-section-auth">
+      <div><button class="login">Sign In</button></div>
+      <div><button class="register">Register</button></div>
+    </div>
+  </div>
+</header>
+  <main class="main-section">
+    <aside class="aside-menu">
+
+  <!-- Header -->
+  <div class="filter-header">
+    <h3>Filters</h3>
+    <button class="clear-btn">Clear All</button>
+  </div>
+
+  <!-- Category (single select) -->
+  <div class="filter-group">
+    <h4>Category</h4>
+    <label><input type="radio" name="category"> All</label>
+    <label><input type="radio" name="category"> Room & Flats</label>
+    <label><input type="radio" name="category"> Vehicle</label>
+    <label><input type="radio" name="category"> Services</label>
+  </div>
+
+  <!-- City -->
+  <div class="filter-group">
+    <h4>City</h4>
+    <div class="city-list">
+      <span class="city">Kathmandu</span>
+      <span class="city">Pokhara</span>
+      <span class="city">Lalitpur</span>
+      <span class="city">BhaktaPur</span>
+      <span class="city">Chitwan</span>
+      <span class="city">Butwal</span>
+      <span class="city">Biratnagar</span>
+    </div>
+  </div>
+
+  <!-- Price -->
+  <div class="filter-group">
+    <h4>Price Range (NPR)</h4>
+    <div class="price-range">
+      <div class="price-range-1"><button> Rs 4000</button></div>
+      <div class="price-range-2"><button>Rs 5000</button></div>
+    </div>
+    
+    
+  </div>
+
+  <!-- Amenities (multi select) -->
+  <div class="filter-group">
+    <h4>Amenities</h4>
+    <label><input type="checkbox"> Wifi</label>
+    <label><input type="checkbox"> Parking</label>
+    <label><input type="checkbox"> Hot Water</label>
+    <label><input type="checkbox"> AC</label>
+    <label><input type="checkbox"> Generator</label>
+    <label><input type="checkbox"> Kitchen</label>
+    <label><input type="checkbox"> Security</label>
+  </div>
+
+  <!-- Owner -->
+  <div class="filter-group">
+    <h4>Owner</h4>
+    <label><input type="checkbox"> Verified Owner</label>
+    <label><input type="checkbox"> Trusted Score 80+</label>
+  </div>
+
+  <!-- Rating (single select) -->
+  <div class="filter-group">
+    <h4>Rating</h4>
+    <label><input type="radio" name="rating"> Any</label>
+    <label><input type="radio" name="rating"> 4★ & above</label>
+    <label><input type="radio" name="rating"> 3★ & above</label>
+  </div>
+
+  <!-- Button -->
+  <button class="apply-btn">Apply Filters</button>
+
+</aside>
+
+  <section class="main-menu">
+
+
+  <div class="listing-header">
+    <div class="left">
+      <h2>Listings in Kathmandu</h2>
+      <p>283 results found</p>
+    </div>
+
+    <div class="right">
+      <select>
+        <option>Sort by</option>
+        <option>Price Low → High</option>
+        <option>Price High → Low</option>
+      </select>
+
+      <button class="view active">Grid</button>
+      <button class="view">List</button>
+    </div>
+  </div>
+
+  <!-- ACTIVE FILTERS -->
+  <div class="active-filters">
+    <span>Kathmandu ✕</span>
+    <span>Wifi ✕</span>
+    <span>Hot Water ✕</span>
+    <span>Rs 5k–50k ✕</span>
+  </div>
+
+  <!-- CARDS -->
+  <div class="card-grid">
+
+    <!-- 8 SAME STRUCTURE CARDS -->
+    <div class="card">
+      <div class="card-top">
+        <span class="tag">ROOM</span>
+        <span class="rating-circle">4.5</span>
+      </div>
+
+      <div class="price">Rs 15000</div>
+
+      <div class="owner">
+        <span>Ram</span>
+        <span class="verified">✔ Verified</span>
+      </div>
+
+      <h3>Cozy Room</h3>
+      <p class="address">Kathmandu, Nepal</p>
+
+      <div class="card-bottom">
+        <span>⭐ 4.5</span>
+        <button>Details</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="tag">Vehicle</span>
+        <span class="rating-circle">4.2</span>
+      </div>
+      <div class="price">Rs 50000</div>
+      <div class="owner">
+        <span>Sita</span>
+        <span class="verified">✔ Verified</span>
+      </div>
+      <h3>Bike for Rent</h3>
+      <p class="address">Kathmandu</p>
+      <div class="card-bottom">
+        <span>⭐ 4.2</span>
+        <button>Details</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="tag">Room</span>
+        <span class="rating-circle">4.8</span>
+      </div>
+      <div class="price">Rs 20000</div>
+      <div class="owner">
+        <span>Hari</span>
+        <span class="verified">✔ Verified</span>
+      </div>
+      <h3>Luxury Room</h3>
+      <p class="address">Lalitpur</p>
+      <div class="card-bottom">
+        <span>⭐ 4.8</span>
+        <button>Details</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="tag">Services</span>
+        <span class="rating-circle">4.0</span>
+      </div>
+      <div class="price">Rs 5000</div>
+      <div class="owner">
+        <span>Gita</span>
+        <span class="verified">✔ Verified</span>
+      </div>
+      <h3>Cleaning Service</h3>
+      <p class="address">Bhaktapur</p>
+      <div class="card-bottom">
+        <span>⭐ 4.0</span>
+        <button>Details</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="tag">Room</span>
+        <span class="rating-circle">4.3</span>
+      </div>
+      <div class="price">Rs 12000</div>
+      <div class="owner">
+        <span>Krishna</span>
+        <span class="verified">✔ Verified</span>
+      </div>
+      <h3>Budget Room</h3>
+      <p class="address">Kathmandu</p>
+      <div class="card-bottom">
+        <span>⭐ 4.3</span>
+        <button>Details</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="tag">Vehicle</span>
+        <span class="rating-circle">4.6</span>
+      </div>
+      <div class="price">Rs 80000</div>
+      <div class="owner">
+        <span>Bikash</span>
+        <span class="verified">✔ Verified</span>
+      </div>
+      <h3>Car for Rent</h3>
+      <p class="address">Pokhara</p>
+      <div class="card-bottom">
+        <span>⭐ 4.6</span>
+        <button>Details</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="tag">Services</span>
+        <span class="rating-circle">4.1</span>
+      </div>
+      <div class="price">Rs 7000</div>
+      <div class="owner">
+        <span>Sunita</span>
+        <span class="verified">✔ Verified</span>
+      </div>
+      <h3>Plumbing</h3>
+      <p class="address">Kathmandu</p>
+      <div class="card-bottom">
+        <span>⭐ 4.1</span>
+        <button>Details</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="tag">Room</span>
+        <span class="rating-circle">4.7</span>
+      </div>
+      <div class="price">Rs 18000</div>
+      <div class="owner">
+        <span>Ramesh</span>
+        <span class="verified">✔ Verified</span>
+      </div>
+      <h3>Modern Apartment</h3>
+      <p class="address">Kathmandu</p>
+      <div class="card-bottom">
+        <span>⭐ 4.7</span>
+        <button>Details</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
